@@ -17,9 +17,9 @@
             "php":              ">=5.3.3",
             "symfony/symfony":  "~2.4"
     },
-    "minimum-stabilty": "dev",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-0": { "BlueShamrock\\Symfony": "src/" }
     },
-    "target-dir": "BlueShamrock/bsdRADBundle"
+    "target-dir": ""
 }
