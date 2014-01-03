@@ -1,0 +1,25 @@
+{
+    "name": "blueshamrock/bsd-rad",
+    "description": "Blue Shamrock customizations to Symfony",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Blue Shamrock Development",
+            "homepage": "http://blueshamrock.com"
+        },
+        {
+            "name": "Micah Breedlove",
+            "email": "micah@blueshamrock.com",
+            "homepage": "http://blueshamrock.com"
+        }
+    ],
+    "require": {
+            "php":              ">=5.3.3",
+            "symfony/symfony":  "~2.4"
+    },
+    "minimum-stabilty": "dev",
+    "autoload": {
+        "psr-0": { "BlueShamrock\\Symfony": "src/" }
+    },
+    "target-dir": "BlueShamrock/bsdRADBundle"
+}
