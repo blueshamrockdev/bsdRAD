@@ -36,6 +36,18 @@ class Controller extends BaseController
     }
 
     /**
+     * Get Repository 
+     *
+     * @param string $repo Bundle:Entity
+     *
+     * @return EntityRepository
+     */
+    public function getRepository($repo)
+    {
+        return $this->getDoctrine()->getRepository($repo);
+    }
+
+    /**
      * Lazy function that gets a service or parameter by id.
      *
      * @param string $id The service/parameter id
