@@ -17,6 +17,9 @@ class ScriptHandler extends BaseScriptHandler
         $parametersFile = $appDir . "/config/parameters.yml";
         $databasesFile  = $appDir . "/config/databases.yml";
 
+        if ( file_exists($parametersFile) && file_exists($databasesFile) ) {
+            return;
+        }
         if ( !is_dir($appDir) ) {
            $io->write("The symfony-app-dir (" . $appDir . ") specified in the composer.json file could not be found. ", true);
 
