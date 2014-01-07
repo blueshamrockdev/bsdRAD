@@ -18,6 +18,7 @@ class ScriptHandler extends BaseScriptHandler
         $databasesFile  = $appDir . "/config/databases.yml";
 
         if ( file_exists($parametersFile) && file_exists($databasesFile) ) {
+
             return;
         }
         if ( !is_dir($appDir) ) {
@@ -40,7 +41,7 @@ class ScriptHandler extends BaseScriptHandler
             copy($envParametersFile, $parametersFile);
 
         } else {
-                $io->write("The parameters file (" . $parametersFile . ") exists. Skipping. ", true);
+                $io->write("<comment>The parameters file (" . $parametersFile . ") exists.</comment> <info>Skipping.</info> ", true);
         }
         
 
@@ -56,7 +57,7 @@ class ScriptHandler extends BaseScriptHandler
             copy($envDatabasesFile, $databasesFile);
 
         } else {
-                $io->write("The databases file (" . $databasesFile . ") exists. Skipping. ", true);
+                $io->write("<comment>The databases file (" . $databasesFile . ") exists.</comment> <info>Skipping.</info> ", true);
         }
 
 
