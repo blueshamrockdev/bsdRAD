@@ -49,7 +49,7 @@ class ScriptHandler extends BaseScriptHandler
 
             $envDatabasesFile= $appDir . "/config/environments/databases" . "." . $environment . ".yml";
             if ( !file_exists($envDatabasesFile) ) {
-                $io->write("The environmnet databases file (" . $envParametersFile . ") is missing. Task cannot be completed. ", true);
+                $io->write("The environmnet databases file (" . $envDatabasesFile . ") is missing. Task cannot be completed. ", true);
 
                 return;
             }
