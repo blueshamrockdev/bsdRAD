@@ -1,6 +1,6 @@
 <?PHP
 
-namespace BlueShamrock\Symfony\Controller;
+namespace BlueShamrock\Symfony\BsdRADBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller as BaseController;
 

@@ -1,6 +1,6 @@
 <?PHP
 
-namespace BlueShamrock\Symfony\Composer;
+namespace BlueShamrock\Symfony\BsdRADBundle\Composer;
 
 use Sensio\Bundle\DistributionBundle\Composer\ScriptHandler as BaseScriptHandler;
 

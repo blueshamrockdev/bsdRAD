@@ -6,7 +6,7 @@
  *
  */
 
-namespace BlueShamrock\Symfony\Annotation;
+namespace BlueShamrock\Symfony\BsdRADBundle\Annotation;
 
 
 /**

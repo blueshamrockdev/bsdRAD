@@ -1,6 +1,6 @@
 <?PHP
 
-namespace BlueShamrock\Symfony\Entity;
+namespace BlueShamrock\Symfony\BsdRADBundle\Entity;
 
 use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\ORM\Mapping as ORM;
@@ -42,7 +42,7 @@ trait SluggableTrait
     {
         $reader = new AnnotationReader();
         $refClass = new \ReflectionClass(get_class($this));
-        $sluggable = $reader->getClassAnnotation($refClass, 'BlueShamrock\Symfony\Annotation\Sluggable');
+        $sluggable = $reader->getClassAnnotation($refClass, 'BlueShamrock\Symfony\BsdRADBundle\Annotation\Sluggable');
         $field = $sluggable->field;
 
         if ( is_null($this->slug) ){

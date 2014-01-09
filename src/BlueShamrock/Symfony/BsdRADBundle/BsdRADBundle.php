@@ -1,6 +1,6 @@
 <?PHP
 
-namespace BlueShamrock\Symfony;
+namespace BlueShamrock\Symfony\BsdRADBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
