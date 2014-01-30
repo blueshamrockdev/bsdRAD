@@ -22,5 +22,10 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-0": { "BlueShamrock\\Symfony": "src/" }
+    },
+    "extra": {
+        "branch-alias": {
+              "dev-master": "1.1.x-dev"
+        }
     }
 }
