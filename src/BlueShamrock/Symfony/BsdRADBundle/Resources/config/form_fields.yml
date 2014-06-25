@@ -1,0 +1,8 @@
+parameters:
+    bsd.rad.form.type.us_state.class:      BlueShamrock\Symfony\BsdRADBundle\Form\Type\StateDropdownType
+
+services:
+    bsd.rad.form.type.us_state:
+        class: %bsd.rad.form.type.us_state.class%
+        tags:
+            - { name: form.type, alias: us_state }
