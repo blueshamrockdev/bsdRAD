@@ -21,7 +21,7 @@
     },
     "minimum-stability": "dev",
     "autoload": {
-        "psr-0": { "BlueShamrock\\Symfony": "src/" }
+        "psr-4": { "BlueShamrock\\Symfony\\BsdRADBundle\\": "src/" }
     },
     "extra": {
         "branch-alias": {
