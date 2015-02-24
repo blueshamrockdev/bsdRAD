@@ -3,13 +3,14 @@
 namespace BlueShamrock\Symfony\BsdRADBundle\Composer;
 
 use Sensio\Bundle\DistributionBundle\Composer\ScriptHandler as BaseScriptHandler;
+use Composer\Script\CommandEvent;
 
 class ScriptHandler extends BaseScriptHandler
 {
 
     protected static $DEFAULT_ENV = 'dev';
 
-    public static function installEnvironmentFiles($event)
+    public static function installEnvironmentFiles(CommandEvent $event)
     {
         $options = self::getOptions($event);
         $io = $event->getIO();
