@@ -16,7 +16,7 @@ use Doctrine\ORM\Mapping as ORM;
 trait CinnamonTrait
 {
     /**
-     * @ORM\Column(type="string", length="50")
+     * @ORM\Column(type="string", length=50)
      * @var string $cinnamon
      */
     protected $cinnamon;
@@ -54,7 +54,7 @@ trait CinnamonTrait
 
         $this->cinnamon = md5(hash("sha512", "cinnamon{" . $seed . "}"));
 
-        return $this;
+        return $this->cinnamon;
     }
 
 }

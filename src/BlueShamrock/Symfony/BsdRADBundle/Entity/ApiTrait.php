@@ -6,7 +6,7 @@ use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Class ApiTrait
+ * Trait ApiTrait
  * Adds
  *
  * generateApiKey() should be used on PrePersist
@@ -19,13 +19,13 @@ trait ApiTrait
 
     /**
      * @var string $apiKey
-     * @ORM\Column(type="string", length="50")
+     * @ORM\Column(type="string", length=50)
      */
     protected $apiKey;
 
     /**
      * @var string $apiToken
-     * @ORM\Column(type="string", length="50")
+     * @ORM\Column(type="string", length=50)
      */
     protected $apiToken;
 
@@ -117,7 +117,7 @@ trait ApiTrait
     /**
      * PrePersist convienece Function for generating ApiToken and ApiKey at entity creation simultaneously
      */
-    protected function apiPrePersist()
+    public function apiPrePersist()
     {
         $this->generateApiKey();
         $this->generateApiToken();

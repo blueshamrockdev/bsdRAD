@@ -1,6 +1,8 @@
 <?php
 
-namespace BlueShamrock\Symfony\BsdRADBundle\Exeption;
+namespace BlueShamrock\Symfony\BsdRADBundle\Exception;
+
+use Exception;
 
 /**
  *
@@ -17,8 +19,20 @@ class UnauthorizedCinnamon extends \Exception
      * Dan: Do not put unauthorized cinnamon on the meeting table! That's all we need.
      */
 
-    protected $code = '307';
+    public static $codeNumber = '307';
 
-    protected $message = 'Unauthorized Cinnamon on the table.';
+    public static $defaultMessage = 'Unauthorized Cinnamon on the table.';
+
+    public function __construct($message = "", $code = 0, Exception $previous = null)
+    {
+        if (empty($message)) {
+            $message = static::$defaultMessage;
+        }
+
+        if ($code == 0) {
+            $code = static::$codeNumber;
+        }
+        parent::__construct($message, $code, $previous);
+    }
 
 }
