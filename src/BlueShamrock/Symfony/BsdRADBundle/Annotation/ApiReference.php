@@ -2,19 +2,16 @@
 
 namespace BlueShamrock\Symfony\BsdRADBundle\Annotation;
 
+
 /**
- * Class Sluggable
+ * Class Api
  * @package BlueShamrock\Symfony\Annotation
  * @author Micah Breedlove <druid628@gmail.com>
  * @Annotation
  */
-class Sluggable 
+class Api
 {
-
     /** @var string $field */
     public $field;
-
-    /** @var string $separator */
-    public $separator = '';
 
 }

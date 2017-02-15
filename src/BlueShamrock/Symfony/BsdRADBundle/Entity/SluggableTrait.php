@@ -40,12 +40,12 @@ trait SluggableTrait
      */
     public function createSlug()
     {
-        $reader = new AnnotationReader();
-        $refClass = new \ReflectionClass(get_class($this));
+        $reader    = new AnnotationReader();
+        $refClass  = new \ReflectionClass(get_class($this));
         $sluggable = $reader->getClassAnnotation($refClass, 'BlueShamrock\Symfony\BsdRADBundle\Annotation\Sluggable');
-        $field = $sluggable->field;
+        $field     = $sluggable->field;
 
-        if ( is_null($this->slug) ){
+        if (is_null($this->slug)) {
 
             $this->setSlug($this->slugify($this->$field, $sluggable->separator));
         }
